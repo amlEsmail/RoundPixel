@@ -1,0 +1,63 @@
+
+@media (max-width:480px) {
+     
+}
+
+
+
+@media (max-width:767px) {
+   
+ }
+
+
+
+@media (min-width:768px) {
+
+}
+
+
+
+@media (min-width:992px) {
+    
+}
+
+
+
+@media (max-width:991px) {
+
+    
+}
+@media (min-width:768px ) and (max-width:991px) {
+
+}
+
+
+
+@media (min-width:768px ) and (max-width:1199px) {
+
+       
+}
+
+
+
+@media (max-width:1200px) {
+    
+}
+@media(max-width:1000px)
+{
+    /* header */
+    header .fixed-top {
+        top: 88px;
+    } 
+header .top-header ul.contact-List
+    {
+        margin-bottom: 1rem;
+    }
+    header .top-header ul
+    {
+        text-align: center;
+    }
+    
+  /* header */
+}
+
