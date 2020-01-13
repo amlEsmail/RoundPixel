@@ -2,6 +2,15 @@
 
 $(document).ready(function () {
 
+     /* ======= Scroll To Fixed Menu ======= */ 
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 30) {
+        $('#mainNav').addClass('fixed-top-r');
+    } else {
+        $('#mainNav').removeClass('fixed-top-r');
+    }
+});
+     /* ======= Scroll To Fixed Menu ======= */ 
     /* ======= Preloader ======= */
     // $(window).on('load', function () {
     //     $("div.preloader ul.preloader").fadeOut(1000, function () {
@@ -14,21 +23,42 @@ $(document).ready(function () {
 
     /* ======= Preloader ======= */
     /* ======= Slider ======= */
+                    
+        $('.clients-carousel').slick({
 
-    // $('.s-banner .slider-wrap').slick({
-    //     autoplay: true,
-    //     infinite: true,
-    //     pauseOnFocus: false,
-    //     pauseOnHover: false,
-    //     prevArrow: '<div class="slick-nav "><i class="fa fa-angle-left "></i>  </div>',
-    //     nextArrow: '<div class="slick-nav "> <i class="fa fa-angle-right"></i> </div>',
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     speed: 1000,
-    //     fade: true,
-    //     cssEase: 'linear'
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        pauseOnFocus:false,
+        pauseOnHover:false,
+        prevArrow: '<i class="fa fa-angle-right"></i>',
+        nextArrow: '<i class="fa fa-angle-left"></i>',
+        autoplay:true,
+        infinite: true,
+        speed: 1000,
 
-    // }).slickAnimation();
+        responsive: [{
+                 breakpoint: 768,
+                 settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                
+                    }
+                  },
+                  {
+                 breakpoint: 480,
+                 settings: {
+                  arrows: false, 
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                
+                    }
+                 },
+
+                ]
+
+    });
+
     /* ======= Slider ======= */
 
 
