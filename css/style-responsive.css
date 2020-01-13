@@ -6,7 +6,11 @@
 
 
 @media (max-width:767px) {
-   
+   .gap{
+       position: relative;
+       top: 0;
+       left: 0;
+   }
  }
 
 
@@ -28,7 +32,11 @@
     
 }
 @media (min-width:768px ) and (max-width:991px) {
-
+    .gap {
+        position: relative;
+        left: 80px;
+        top: 0;
+    }
 }
 
 

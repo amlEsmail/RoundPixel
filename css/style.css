@@ -284,6 +284,47 @@ position: relative;
 }
 /* ======= About  ======= */
 /* ======= Products  ======= */
+.services{
+  background: white;
+  padding: 100px 20px;
+}
+.services .nav {
+  justify-content: center;
+}
+.services .nav-pills .nav-link {
+  border-radius: .25rem;
+  border: 1px solid #eeebeb;
+  box-shadow: 0 2px 2px 0 rgba(5,35,49,.12), 0 0 2px 0 rgba(5,35,49,.14);
+  border-radius: 2px;
+  background-color: #fff;
+  color: #48484a;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .nav-pills .nav-link:hover{
+  box-shadow: 0 6px 10px 0 rgba(5,35,49,.14), 0 1px 18px 0 rgba(5,35,49,.12);
+}
+.services .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #48484a;
+  background-color: #f2f4f4;;
+}
+.gap{
+  position: relative;
+    left: 18px;
+    top: 35px;
+}
+.ma-top{
+  margin-top: 15px;
+}
+.nav-tabs {
+  border-bottom: 0px;
+}
+.services i {
+  font-size: 30px;
+    color: #00a69c;
+}
 /* ======= Products  ======= */
 /* ======= clients  ======= */
 /* ======= clients  ======= */
