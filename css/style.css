@@ -191,6 +191,17 @@ ul.social-list li a {
     display: inline-block;
     background: #424144;
     color: #e6e7e8;
+
+}
+ul.social-list li a:hover{
+  background: #00a69c;
+  
+}
+ul.social-list li a:hover i{
+   color: #e6e7e8;
+}
+ul.social-list li a i {
+color:#00a69c ;
 }
 header nav.navbar
 {
@@ -421,18 +432,24 @@ color: #f2f2f2;
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border:1px solid #00a69c;
-  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  /* border-radius: 50%; */
+  /* border: 1px solid #00a69c; */
+  /* font-size: 24px; */
   text-align: center;
-  line-height: 40px;
-  color: #00a69c;
+  line-height: 35px;
+  color: #4d4d4f;
   display: block;
   z-index: 999;
+  background: #00a69c;
+  text-align: center;
+  transition: all .5s ease-in-out;
 }
-
+.clients-carousel .slick-arrow:hover{
+  background: #424144; 
+  color: #00a69c;
+}
 .clients-carousel .slick-arrow.fa-angle-left
 {
   left: -60px;
@@ -443,7 +460,50 @@ color: #f2f2f2;
   right:-60px;
   left: auto;
 }
+
+
 /* ======= clients  ======= */
+/* ======= partner  ======= */
+.partnerR{
+  padding: 100px 20px;
+  background: #dcdcdc;
+}
+.partnerR .title-sec {
+  text-align: center;
+}
+.partnerR  .title-sec::after{
+  margin: auto;
+}
+.partnerR .partner-items a {
+  display: inline-block;
+  max-width: 120px;
+  /* height: 50px; */
+  margin: 8px 10px;
+  cursor: pointer;
+
+}
+.partnerR .partner-items a img{
+width: 100%;
+filter: grayscale(1);
+transition: all .5s  ease-in-out;
+
+}
+
+.partnerR .partner-items a:hover img {
+
+  filter: grayscale(0);
+}
+
+.partner-items .item-box
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}  
+
+/* ======= partner  ======= */ 
+
+
 /* ======= contact  ======= */
 /* ======= contact  ======= */
 
@@ -453,11 +513,57 @@ color: #f2f2f2;
 /* ======= footer  ======= */
 
 
- 
+/* ======= gotoUp  ======= */
+
+.gotoup {
+  position: fixed;
+  display: none;
+  bottom: 70px;
+  right: 20px;
+  font-size: 20px;
+  border: 0;
+  z-index: 999;
+  background-color: #00a69c;
+  color: #424144;
+  border-radius: 0;
+  text-align: center;
+  /* display: inline-block; */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  animation: bcktop 1s forwards;
+-webkit-animation: bcktop 1s forwards;
+-moz-animation: bcktop 1s forwards;
+-o-animation: bcktop 1s forwards;
+}
+.gotoup.show{
+  display: inline-block;
+}
+.gotoup:hover {
+  color: #e6e7e8;
+  background-color: #424144
+}
 
 
+/* back to top btn animation */
+@keyframes bcktop {
+  0% {
+    opacity:0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
 
-
+/* ======= gotoUp  ======= */
 
 
 

@@ -84,6 +84,11 @@ header .top-header ul.contact-List
    }
    /* about-sec */
 
+   /* partners */
+   .partner-items .item-box{
+    flex-direction: column;
+   }
+
  }
 
 

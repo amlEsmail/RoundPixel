@@ -63,44 +63,54 @@ $(window).scroll(function(){
 
 
     /* ======= gotoUp ======= */
-    // $(window).scroll(function () {
-    //     var scrolltop = $(window).scrollTop();
-    //     var scrolltrigger = $(".s-services").offset().top;
-    //     if (scrolltop >= scrolltrigger) {
-    //         $("a.gotoup").fadeIn();
-
-    //     }
-    //     else {
-    //         $("a.gotoup").fadeOut(100);
-
-    //     }
-    // });
+    // Scroll To Top Btn Show
+    $(window).scroll(function(){
+        var tsticky = $('.gotoup'),
+            scroll = $(window).scrollTop();
+        if (scroll >= 200) tsticky.addClass('show');
+        else tsticky.removeClass('show');
+    });
 
 
-    // $(" a.gotoup ").click(function (e) {
-    //     e.preventDefault();
-    //     $("html,body").animate({
-    //         scrollTop: $($(this).data("scroll")).offset().top + 1
-    //     }, 1000)
+    $(" a.gotoup ").click(function (e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: $($(this).data("scroll")).offset().top + 1
+        }, 1000)
 
 
-    // });
+    });
 
     /* ======= gotoUp ======= */
+   /* ======= Smooth scrolling ======= */
+   
+	// Smooth scrolling using jQuery easing
+	$("a[href^='#']").on('click', function(e) {
+        var target = $(this.hash);
+        target = target.length ? target : $('meta[name="' + this.hash.slice(1) + '"]');
+            if (target.length) {
+            $('html, body').animate({
+                scrollTop: (target.offset().top + 1)
+            }, 1000, "easeInOutExpo");
+                return false;
+            }
+        });
 
-
-/* ======= sticky Navbar ======= */
-    //var navbar = document.getElementById("#s-header");
-    //  var sticky = navbar.offsetTop;
-    // $( window ).scroll(function(){
-    //     if (window.pageYOffset >= sticky) {
-    //                     navbar.classList.add("sticky")
-    //                 } else {
-    //                     navbar.classList.remove("sticky");
-    //                 }
-    // } );
-
-/* ======= sticky Navbar ======= */
+        $(".nav-link").click(function(){
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        }); 
+	// Closes responsive menu when a scroll trigger link is clicked
+	$('.nav-link').click(function() {
+		$('.navbar-collapse').collapse('hide');
+    });
+    
+    // Scrollspy offset
+	$('body').scrollspy({
+		target: '#mainNav',
+		offset: 30
+	});
+   /* ======= Smooth scrolling ======= */
 
 
 
