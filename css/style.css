@@ -350,15 +350,21 @@ color: #f2f2f2;
 /* ======= About  ======= */
 /* ======= Products  ======= */
 .services{
-  background: white;
+  /* background: white; */
+  background: rgba(242, 242, 242, 0.3);
   padding: 100px 20px;
+  position: relative;
 }
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
 .services .nav {
   justify-content: center;
 }
 .services .nav-pills .nav-link {
   border-radius: .25rem;
-  border: 1px solid #eeebeb;
+  /* border: 1px solid #eeebeb; */
   box-shadow: 0 2px 2px 0 rgba(5,35,49,.12), 0 0 2px 0 rgba(5,35,49,.14);
   border-radius: 2px;
   background-color: #fff;
@@ -369,7 +375,8 @@ color: #f2f2f2;
   align-items: center;
 }
 .services .nav-pills .nav-link:hover{
-  box-shadow: 0 6px 10px 0 rgba(5,35,49,.14), 0 1px 18px 0 rgba(5,35,49,.12);
+  /* box-shadow: 0 6px 10px 0 rgba(5,35,49,.14), 0 1px 18px 0 rgba(5,35,49,.12); */
+  box-shadow: 0px 1px 5px 3px #f2f2f2;
 }
 .services .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #48484a;
@@ -489,8 +496,43 @@ color: #f2f2f2;
 /* ======= contact  ======= */
 
 /* ======= footer  ======= */
+footer{
+  background-color: #fff;
+}
+footer i{
+  color: #00a69c;
+  font-size: 12px;
+  display: inline-block;
+  margin: 0 2px;
+} 
+footer ul i{
+  color:  #e6e7e8;;
+  font-size: 12px;
+  display: inline-block;
+  margin: 0 2px;
+  text-align: center;
+} 
+footer ul {
+  text-align: center;
+}
+#frame {
+  padding: 30px 0;
+}
+iframe {
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+.Rpegypt{
+  padding: 30px 0px 0px;
+}
+footer ul li {
+  display: inline-block;
 
-
+}
+.small-footer{
+  background: #f2f2f2;
+}
 /* ======= footer  ======= */
 
 
