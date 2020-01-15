@@ -1,4 +1,21 @@
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 
 $(document).ready(function () {
 
@@ -12,14 +29,15 @@ $(window).scroll(function(){
 });
      /* ======= Scroll To Fixed Menu ======= */ 
     /* ======= Preloader ======= */
-    // $(window).on('load', function () {
-    //     $("div.preloader ul.preloader").fadeOut(1000, function () {
-    //         $(this).parent().fadeOut(500, function () {
-    //             $("body").css("overflow-y", "auto");
-    //             $(this).remove();
-    //         });
-    //     });
-    // });
+
+    $(window).on('load', function () {
+        $("div.preloading .preloader").fadeOut(1000, function () {
+            $(this).parent().fadeOut(500, function () {
+                $("body").css("overflow-y", "auto");
+                $(this).remove();
+            });
+        });
+    });
 
     /* ======= Preloader ======= */
     /* ======= Slider ======= */
@@ -85,7 +103,7 @@ $(window).scroll(function(){
    /* ======= Smooth scrolling ======= */
    
 	// Smooth scrolling using jQuery easing
-	$("a[href^='#']").on('click', function(e) {
+	$("a.clickItem").on('click', function(e) {
         var target = $(this.hash);
         target = target.length ? target : $('meta[name="' + this.hash.slice(1) + '"]');
             if (target.length) {
@@ -96,12 +114,12 @@ $(window).scroll(function(){
             }
         });
 
-        $(".nav-link").click(function(){
-            $('.nav-link').removeClass("active");
+        $(".nav-link.clickItem").click(function(){
+            $('.nav-link.clickItem').removeClass("active");
             $(this).addClass("active");
         }); 
 	// Closes responsive menu when a scroll trigger link is clicked
-	$('.nav-link').click(function() {
+	$('.nav-link.clickItem').click(function() {
 		$('.navbar-collapse').collapse('hide');
     });
     

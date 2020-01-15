@@ -17,7 +17,6 @@
     <!-- ======= Stylesheets ======= -->
     <link rel="Stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick/slick.css">
-    <link rel="stylesheet" href="css/slick/slick-theme.css">
 
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -33,16 +32,11 @@
 </head>
 <body  id="page-top">
     <!-- ======= Preloader ======= -->
-    <!-- <div class="preloader bg-dbcr">
-        <ul class="preloader">
-            <li class="one bg-bcr"></li>
-            <li class="two bg-wgrey"></li>
-            <li class="three bg-bcr"></li>
-            <li class="four bg-wgrey"></li>
-            <li class="five bg-bcr"></li>
-        </ul>
-
-    </div> -->
+    <div class="preloading bg-dbcr">
+        <div class="preloader">
+           <h1 class="ml3">Round Pixel</h1>
+        </div>
+    </div>
     <!-- ======= Preloader ======= -->
     <!-- ======= Header ======= -->
 
@@ -81,7 +75,7 @@
 
                 <!-- Logo -->
                 <!-- js-scroll-trigger href="#page-top" -->
-                <a class="navbar-brand " js-scroll-trigger  href="#page-top">
+                <a class="navbar-brand clickItem " js-scroll-trigger  href="#page-top">
                     <img src="images/logo/logo.png" alt="">
                 </a>
 
@@ -96,20 +90,20 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#about-us">About Us</a>
+                            <a class="nav-link active clickItem" href="#about-us">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#products">Products</a>
+                            <a class="nav-link clickItem" href="#products">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#clients">clients</a>
+                            <a class="nav-link clickItem" href="#clients">clients</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#partners">partners</a>
+                            <a class="nav-link clickItem" href="#partners">partners</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                            <a class="nav-link clickItem" href="#contact-us">Contact Us</a>
                         </li>
 
                     </ul>
@@ -189,7 +183,7 @@
 
     <!-- ======= About us======= -->
     <!-- ======= Services ======= -->
-    <section class="services area">
+    <section class="services area" id="products">
         <ul class="circles">
             <li></li>
             <li></li>
@@ -203,57 +197,7 @@
             <li></li>
         </ul>
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-12 col-md-6 tab-content" id="myTabContent">
-                    <div class="title-sec">
-                        <h2>Products and Services</h2>
-                    </div>
-                    <div class="product-dis tab-pane fade show active" role="tabpanel" id="flights"
-                        aria-labelledby="flights">
-                        <h5 id="product-title-flights"><span>Flights</span> Booking Engine</h5>
-                        <p id="product-dic-flights">
-                            RoundPixel Flight Booking Engine
-                            is giving the ability to provide
-                            the best content and rates based
-                            on the passenger criterias like
-                            (the passenger location ,
-                            destination , meta search ....)
-                        </p>
-                    </div>
-                    <div class="product-dis tab-pane fade " role="tabpanel" id="hotels" aria-labelledby="hotels">
-                        <h5 id="product-title-hotels"><span>Hotels</span> Booking Engine</h5>
-                        <p id="product-dic-hotels">
-                            RoundPixel hotels booking engine allow the travel agencies
-                            to have rich hotels content,
-                            Like hotelbeds and expedia have more than 300000 hotels which is
-                            very powerful for the OTA to have.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="row nav-pills ">
-
-                        <div class="col-12 col-md-6 " role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="flights-tab" data-toggle="pill" href="#flights" role="tab"
-                                aria-controls="flights" aria-selected="true">
-                                <i class="fas fa-plane"></i>
-                                <h6>Flights Booking Engine</h6>
-                            </a>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <a class="nav-link " id="hotels-tab" data-toggle="pill" href="#hotels" role="tab"
-                                aria-controls="hotels" aria-selected="false">
-                                <i class="fas fa-bed"></i>
-                                <h6>Hotels Booking Engine</h6>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div> -->
+        
             <div class="row">
                 
                 <div class="col-12 col-md-6 order-2 order-md-1">
@@ -422,26 +366,78 @@
  </section>
     <!-- ======= Partners  ======= -->
     <!-- =======footer======= -->
-    <footer>
+    <footer id="contact-us">
         <!-- <div id="map"></div> -->
-        <div class="container">
-            <hr>
+        <div class="top-footer container">
+      
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <img src="images/logo/logo.png" alt="" class="mt-4">
-                    <p>
-                        RoundPixel is a leading, highly innovative software house, systems integrator and technology provider, established to provide leading edge intelligent technical solutions and consulting services to travel businesses
-                    </p>
+            
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="logo">
+                        <img src="images/logo/logo.png" alt="" class="img-fluid "  >
+                    </div>
+                    <div class="about-txt">
+                        <p>
+                            RoundPixel is a leading, highly innovative software house, systems integrator and technology provider, 
+                            established to provide leading edge intelligent technical solutions and consulting services to travel businesses
+                        </p>
+                       <!-- social-list -->
+                       <ul class="social-list list-unstyled list-inline  ">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                 
+            
 
                  
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-6 col-lg-4 align-self-center">
+                    <div class="Rpegypt">
+                        <h3>Contact us</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="items">
+                                <span>15/38 Zahraa Al Maadi, No.21,floor no. 3</span>
+                            </div>
+                        
+                        </div>
+                        <div class="contact-item">
+                            <i class="far fa-envelope "></i>
+                            <div class="items">
+                                <span>info@round-pixel.net</span>
+                            </div>
+                        
+                        </div>
+                 
+                        <div class="contact-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="items">
+                                <span>+20 10 232 45 981</span>
+                                <span>+20 10 212 82 958</span>
+                                <span >+20 27 326 471</span>  
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 align-self-center">
+                    <div id='frame'>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.4522119925236!2d31.330494385043956!3d29.96643138191078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458393b1d1fb1e1%3A0x1f1c42d9d4b68e2c!2sRoundpixel%20company!5e0!3m2!1sar!2seg!4v1578997627281!5m2!1sar!2seg"  height="150" frameborder="0" style="padding: 5px;
+                        border: 3px solid white;
+                        border-radius: 5px;width: 100%;" allowfullscreen=""></iframe>
+                    </div>  
+                </div>
+
+                <!-- <div class="col-12 col-md-8 align-self-center">
                     <div class="row">
-                        <div class="col-12 col-md-7">
+                        <div class="col-12 col-md-7 ">
                             <div class="Rpegypt">
                                 <h3>Contact us</h3>
                                 <p>
-                                    <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                                     15/38 Zahraa Al Maadi, No.21,floor no. 3
                                 </p>
                                 <p><i class="far fa-envelope mr-auto"></i> info@round-pixel.net</p>
@@ -464,7 +460,7 @@
                         </div>
                     </div>
                    
-                </div>
+                </div> -->
             </div>
 
                
@@ -473,16 +469,9 @@
         <div class="small-footer">
             <div class="container">
                 <div class="row">
-                    <div class="media-links col-12 col-md-3">
-                        <ul class="social-list list-unstyled list-inline  py-3 mb-0">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
+          
                     
-                    <div class=" col-12 col-md-6 text-center ">
+                    <div class=" col-12 col-md-6 text-center offset-md-3  ">
                         <div class="footer-copyright text-center py-3">© 2020 Copyright:
                             <a href="#" class="copy"> RoundPixel.net</a>
                         </div>
@@ -498,7 +487,7 @@
       
     </footer>
 
-    <a class="gotoup "  href="#page-top">
+    <a class="gotoup clickItem"  href="#page-top">
         <span><i class="fa fa-angle-up"></i></span>
     </a>
 
@@ -527,6 +516,7 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
     <script type="text/javascript" src="js/plugin.js"></script>
     <!-- ======= Scripts ======= -->
 </body>
