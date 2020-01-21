@@ -66,16 +66,16 @@ header .top-header ul.contact-List
 @media (max-width:767px) {
     /* title-sec */
     .title-sec{
-        text-align: center;
+        /* text-align: center; */
     }
     .title-sec::after{
-        margin: auto;
+        /* margin: auto; */
     }
 
    /* title-sec */
    /* about-sec */
     .aboutR{
-        text-align: center;
+        /* text-align: center; */
     }
 
     .aboutR .pl-5{
@@ -84,7 +84,8 @@ header .top-header ul.contact-List
    .aboutR .box-item .icon{
        float: none;
        display: block;
-       margin: 10px auto;
+       /* margin: 10px auto; */
+       margin: 10px;
    }
    .aboutR .text
    {
